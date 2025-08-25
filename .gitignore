@@ -1,0 +1,64 @@
+# ==== General ====
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+
+# ==== VS Code ====
+.vscode/
+
+# ==== Node / React (imedmexTODO-frontend) ====
+imedmexTODO-frontend/node_modules/
+imedmexTODO-frontend/.pnp
+imedmexTODO-frontend/.pnp.js
+imedmexTODO-frontend/.yarn/*
+!imedmexTODO-frontend/.yarn/patches
+!imedmexTODO-frontend/.yarn/releases
+!imedmexTODO-frontend/.yarn/plugins
+!imedmexTODO-frontend/.yarn/sdks
+!imedmexTODO-frontend/.yarn/versions
+imedmexTODO-frontend/coverage/
+imedmexTODO-frontend/.nyc_output
+imedmexTODO-frontend/.eslintcache
+imedmexTODO-frontend/.parcel-cache
+imedmexTODO-frontend/.vite
+imedmexTODO-frontend/dist/
+imedmexTODO-frontend/build/
+
+# Variables de entorno React
+imedmexTODO-frontend/.env
+imedmexTODO-frontend/.env.*
+!imedmexTODO-frontend/.env.example
+
+# ==== .NET / Visual Studio (imedmexTODO) ====
+imedmexTODO/.vs/
+imedmexTODO/bin/
+imedmexTODO/obj/
+imedmexTODO/out/
+imedmexTODO/**/*.user
+imedmexTODO/**/*.suo
+imedmexTODO/**/*.cache
+imedmexTODO/**/*.dbmdl
+imedmexTODO/**/*.opendb
+imedmexTODO/**/*.ncb
+imedmexTODO/**/*.aps
+imedmexTODO/**/*.ilk
+imedmexTODO/**/*.pdb
+
+# Configuración local
+imedmexTODO/appsettings.Development.json
+imedmexTODO/appsettings.*.Development.json
+imedmexTODO/appsettings.Local.json
+imedmexTODO/appsettings.*.Local.json
+
+# IIS Express
+imedmexTODO/.vs/iisexpress/
+
+# Certificados / claves
+imedmexTODO/**/*.pfx
+imedmexTODO/**/*.snk
+
+# Publicaciones locales
+imedmexTODO/wwwroot/dist/
+imedmexTODO/logs/
