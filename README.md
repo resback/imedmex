@@ -48,7 +48,7 @@ https://localhost:7170/api
   Authorization: Bearer {token}
   ```  
 
-- Respuestas siempre en formato JSON estandarizado (`ApiResponse`).  
+- Respuestas JSON estandar (`ApiResponse`).  
 
 ### 📥 Ejemplo de Respuesta JSON  
 ```json
