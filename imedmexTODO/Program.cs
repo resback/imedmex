@@ -13,7 +13,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer")));
 
-// 🔧 BIND + VALIDACIÓN de JwtSettings para IOptions<JwtSettings>
 builder.Services.AddOptions<JwtSettings>()
     .Bind(builder.Configuration.GetSection("Jwt"))
     .Validate(s => !string.IsNullOrWhiteSpace(s.Key), "Jwt:Key es requerido")
@@ -22,7 +21,6 @@ builder.Services.AddOptions<JwtSettings>()
     .Validate(s => s.ExpiresMinutes > 0, "Jwt:ExpiresMinutes debe ser > 0")
     .ValidateOnStart();
 
-// Para JwtBearer seguimos leyendo de config (ya validado arriba)
 var jwt = builder.Configuration.GetSection("Jwt").Get<JwtSettings>()!;
 var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwt.Key));
 
